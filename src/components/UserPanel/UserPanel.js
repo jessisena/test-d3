@@ -1,6 +1,6 @@
 import React from "react";
 import { BarChart } from "react-d3-components";
-
+import UserData from "../UserData/UserData";
 import ResizeComponent from "../ResizeComponent";
 
 const UserPanel = (props) => {
@@ -32,7 +32,9 @@ const UserPanel = (props) => {
     
 		<div class="ui fluid center aligned container">
 			<div class="ui raised segments">
-				<div class="ui segment">User data</div>
+				<div class="ui segment">
+          <UserData></UserData>
+        </div>
 				<div class="ui segment">
 					<BarChart
 						data={data}
